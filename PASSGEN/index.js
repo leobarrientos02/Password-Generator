@@ -1,5 +1,7 @@
 //console.log(process.argv);
-const { program } = require("commander");
+const program = require("commander");
+const chalk = require("chalk");
+
 const createPassword = require("./utils/createPassword");
 /* TESTING
 if (process.argv[2] === "generate") {
@@ -25,4 +27,4 @@ const { length, save, numbers, symbols } = program.opts();
 const generatePassword = createPassword(length, numbers, symbols);
 
 //Output generated password
-console.log(generatePassword);
+console.log(chalk.blue("Generated Password: ") + chalk.bold(generatePassword));
