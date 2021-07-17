@@ -1,5 +1,5 @@
+#!/usr/bin/env node
 //TEST:console.log(process.argv);
-
 const program = require("commander");
 const chalk = require("chalk");
 const clipboardy = require("clipboardy");
